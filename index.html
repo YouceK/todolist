@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ce que je dois faire</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<header>
+			<section>
+				<form action="javascript:postaction()" id="form">
+					<label for="title">ToDoList</label>
+					<input type="text" id="title" name="title" placeholder="Je dois..."  />
+					
+				</form>
+			</section>
+		</header>
+		<section>
+			<h2 onclick="save()">à faire :<span id="todocount"></span></h2>
+			<ol id="todolist" class="demo-box">
+			</ol>
+			<h2>en cours:<span id="doingnow"></span></h2>
+			<ul id="doinglist" class="demo-box2">
+			</ul>
+			<h2>terminé :<span id="donecount"></span></h2>
+			<ul id="donelist">
+			</ul>
+			<footer>
+			<a href="javascript:clear();">Effacer</a>
+		</footer>
+		
+		</section>	
+		
+	<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
